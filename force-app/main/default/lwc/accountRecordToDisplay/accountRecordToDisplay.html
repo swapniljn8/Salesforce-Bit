@@ -1,0 +1,15 @@
+<template>
+    <template for:each={accountDetails} for:item="element">
+        <div key={element.id}>
+            <p> Name : {element.name}</p>
+            <p>Phone : {element.phone}</p>
+            <p>Website : {element.website}</p>
+        </div>
+    </template>
+    <template if:true={accountList.data}>
+        {getAccountByWireProp}
+    </template>
+    <lightning-radio-group name="Select Apex call" label="Apex calls" options={options} value={value} type="radio" onchange={handleChange}>
+        
+    </lightning-radio-group>
+</template>
