@@ -1,7 +1,5 @@
 public with sharing class AccountApiService_source {
-    public AccountApiService_source() {
-
-    }
+    
     public static void sendAccounts (List<Account> accountJSON) {
         String requestBody = JSON.serialize (accountJSON);
         String targetEndpoint = 'callout:Salesforce_Target_Org_connect/services/apexrest/Account'; // Replace with your target org's endpoint
