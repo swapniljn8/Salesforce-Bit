@@ -17,7 +17,7 @@ export default class AccountRecordToDisplay extends LightningElement {
         { label: 'Imperative', value: 'Imperative' }        
     ]
     @wire(getRecord, {recordId : '$recordId', fields : [NAME,PHONE,WEBSITE]}) 
-    accountList;
+    accountList;//wire a property
     /* 
     accountList.data = 
     {
@@ -38,13 +38,13 @@ export default class AccountRecordToDisplay extends LightningElement {
 }
     */
     get getAccountByWireProp() {
-        return JSON.stringify(this.accountList.data.fields.Phone.value);
+        return JSON.stringify(this.accountList.data.fields.Phone.value); //Schema.sObjectType.Contact.fields.Name.isAccessible()
     }
     //console.log('wire prod);
     connectedCallback() {
         this.getAcctDetails();
     }
-    getAcctDetails() {
+    getAcctDetails() {//imperative apex
         if(this.bypassImperative) {
             return;
         }
@@ -67,7 +67,7 @@ export default class AccountRecordToDisplay extends LightningElement {
         });
     }
     @wire(getRecord, {recordId : '$recordId', fields : [NAME,PHONE,WEBSITE]})
-    accountDetail({error, data}) {
+    accountDetail({error, data}) {//wire as function
         console.log('wire function');
         if(this.bypassWireFunction) {
             return;
