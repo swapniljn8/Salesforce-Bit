@@ -14,5 +14,5 @@ Connecting the dots with Salesforce expertise.
 - Target org :
     - Connected App : Gives the client secret and client key.
     - Rest API apex class to handle the HTTP requests (GET, POST, DELETE, PUT, PATCH)
-        - Class Name : [RestAccountAPIservice](force-app\main\default\classes\RestAccountAPIservice.cls)
+        - Class Name : [RestAccountAPIservice](https://github.com/swapniljn8/Salesforce-Bit/blob/f45fd683735e70b5dfc6ae8d26e1283784da1bd0/force-app/main/default/classes/AccountPullCallout.cls)
 
