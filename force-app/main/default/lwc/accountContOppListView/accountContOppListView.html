@@ -1,0 +1,34 @@
+<template>
+    <div class="content-wrapper">
+        <lightning-card title="Custom Data table in Lightning Web Components">
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                <thead>
+                    <tr>
+                        <th><div class="slds-truncate" title="Name">Name</div></th>
+                        <th><div class="slds-truncate" title="Billing state">Billing state</div></th>
+                        <th><div class="slds-truncate" title="Contact">Contact</div></th>
+                        <th><div class="slds-truncate" title="Phone">Phone</div></th>
+                        <th><div class="slds-truncate" title="Email">Email</div></th>
+                        <th><div class="slds-truncate" title="Opp Name">Opp Name</div></th>
+                        <th><div class="slds-truncate" title="Opp Amount">Opp Amount</div></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={accList} for:item="acc">
+                        <!-- <div key={acc.accoundId}> -->
+                        <tr key={acc.accoundId}>
+                            <th> <div class="slds-truncate" title="Name">{acc.accoundName}</div></th>
+                            <th> <div class="slds-truncate" title="State">{acc.accoundbillingState}</div></th>
+                            <th> <div class="slds-truncate" title="Contact">{acc.contactName}</div></th>
+                            <th> <div class="slds-truncate" title="Phone">{acc.contactPhone}</div></th>
+                            <th> <div class="slds-truncate" title="Email">{acc.contactEmail}</div></th>
+                            <th> <div class="slds-truncate" title="Name">{acc.oppName}</div></th>
+                            <th> <div class="slds-truncate" title="Amount">{acc.amount}</div></th>
+                        </tr>
+                        <!-- </div> -->
+                    </template>
+                </tbody>
+            </table>
+        </lightning-card>
+    </div>
+</template>
