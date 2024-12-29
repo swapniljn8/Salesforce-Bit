@@ -18,5 +18,5 @@ Connecting the dots with Salesforce expertise.
 
 ## 2. Interview Scenarios :
 1. Create a LWC component to display Account owned by current user with its Opportunity with highest amount and Primary Contact:
-- Component : [accountContOppListView](https://github.com/swapniljn8/Salesforce-Bit/blob/main/force-app/main/default/lwc/AccountContOppListView/accountContOppListView.html)
-- Controller - [AccountContOppListCtrl](https://github.com/swapniljn8/Salesforce-Bit/blob/a0a93137cee8d9f978ed29f1954cda21f97999ea/force-app/main/default/classes/AccountContOppListCtrl.cls)
+    - Component : [AccountContOppListView](https://github.com/swapniljn8/Salesforce-Bit/blob/main/force-app/main/default/lwc/AccountContOppListView/accountContOppListView.html)
+    - Controller - [AccountContOppListCtrl](https://github.com/swapniljn8/Salesforce-Bit/blob/a0a93137cee8d9f978ed29f1954cda21f97999ea/force-app/main/default/classes/AccountContOppListCtrl.cls)
