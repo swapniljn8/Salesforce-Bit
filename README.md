@@ -16,3 +16,7 @@ Connecting the dots with Salesforce expertise.
     - Rest API apex class to handle the HTTP requests (GET, POST, DELETE, PUT, PATCH)
         - Class Name : [RestAccountAPIservice](https://github.com/swapniljn8/Salesforce-Bit/blob/f45fd683735e70b5dfc6ae8d26e1283784da1bd0/force-app/main/default/classes/AccountPullCallout.cls)
 
+## 2. Interview Scenarios :
+1. Create a LWC component to display Account owned by current user with its Opportunity with highest amount and Primary Contact:
+- Component : [accountContOppListView](force-app\main\default\lwc\AccountContOppListView\accountContOppListView.html)
+- Controller - [AccountContOppListCtrl](force-app\main\default\classes\AccountContOppListCtrl.cls)
