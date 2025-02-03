@@ -22,3 +22,6 @@ Connecting the dots with Salesforce expertise.
     - Controller - [AccountContOppListCtrl](https://github.com/swapniljn8/Salesforce-Bit/blob/a0a93137cee8d9f978ed29f1954cda21f97999ea/force-app/main/default/classes/AccountContOppListCtrl.cls)
 2. Apex Scenarios :
     - Populate count of type field value from Contact on Account : [UpdateTypeCountOnAccount](https://github.com/swapniljn8/Salesforce-Bit/blob/1d0bf85d0844f19899bb8f554e2883be09363a1e/Scenarios/UpdateTypeCountOnAccount.apex)
+
+## 3. Salesforce Python API :
+    Source : [simple-salesforce](https://simple-salesforce.readthedocs.io/en/latest/index.html)
