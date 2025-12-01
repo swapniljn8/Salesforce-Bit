@@ -1,15 +1,12 @@
-/* 
-Scenario
-Contact - type__C - picklist -type1, type2
-
-Account - Count Numb of type1, Count Numb of type2
-
-*/
-trigger ContactTypeCountTrigger on Contact (after insert, after update) {
-
+trigger ContactTrigger on Contact (before insert, before update) {
+    if(trigger.isbefore) {
+        if(trigger.isUpdate) {
+            //ContactTriggerController.beforeUpdate(trigger.new, trigger.oldMap, trigger.old);
+        }
+    }
     // Set of Account Ids to be updated
     Set<Id> accountIdsToUpdate = new Set<Id>();
-
+    //Scenario : When a Contact is updated, update the Account record with the number of Contacts of Type1 and Type2
     // Iterate through inserted or updated Contacts
     for (Contact contact : Trigger.new) {
         if (contact.AccountId != null) {
