@@ -25,3 +25,31 @@ Connecting the dots with Salesforce expertise.
 
 ## 3. Salesforce Python API :
     Source : [simple-salesforce](https://simple-salesforce.readthedocs.io/en/latest/index.html)
+    
+## 4. Agentforce Lightning-types :
+# Agentforce Lightning Types – Case Demo
+
+## Purpose
+Demonstrate how Agentforce Actions can return rich, structured responses
+using Lightning Types instead of plain text.
+
+## Features
+- Standard Case object only
+- Apex-based Agentforce Action
+- Lightning Types:
+  - Text
+  - Alert
+  - Record Summary
+  - Custom LWC
+- Fully bulkified & secure
+
+## Deployment
+1. Authenticate org
+2. Deploy metadata
+3. Assign permission set
+4. Create Agentforce Action pointing to `CaseAgentAction`
+5. Test on a Case record
+
+## Demo Script
+Ask the agent:
+"Analyze this case and guide me"
