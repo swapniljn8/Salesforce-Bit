@@ -24,7 +24,8 @@ Connecting the dots with Salesforce expertise.
     - Populate count of type field value from Contact on Account : [UpdateTypeCountOnAccount](https://github.com/swapniljn8/Salesforce-Bit/blob/1d0bf85d0844f19899bb8f554e2883be09363a1e/Scenarios/UpdateTypeCountOnAccount.apex)
 
 ## 3. Salesforce Python API :
-    Source : [simple-salesforce](https://simple-salesforce.readthedocs.io/en/latest/index.html)
+    - Integrating python with Salesforce (source) : 
+[SimpleSalesforce](https://simple-salesforce.readthedocs.io/en/latest/index.html)
     
 ## 4. Agentforce Lightning-types :
 ## Purpose
