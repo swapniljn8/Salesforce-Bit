@@ -27,11 +27,8 @@ Connecting the dots with Salesforce expertise.
     Source : [simple-salesforce](https://simple-salesforce.readthedocs.io/en/latest/index.html)
     
 ## 4. Agentforce Lightning-types :
-# Agentforce Lightning Types – Case Demo
-
 ## Purpose
-Demonstrate how Agentforce Actions can return rich, structured responses
-using Lightning Types instead of plain text.
+Demonstrate how Agentforce Actions can return rich, structured responses using Lightning Types instead of plain text.
 
 ## Features
 - Standard Case object only
@@ -42,6 +39,29 @@ using Lightning Types instead of plain text.
   - Record Summary
   - Custom LWC
 - Fully bulkified & secure
+
+## Components
+Salesforce-BIT
+│
+├── force-app/
+│   └── main/default/
+│       ├── classes/
+│       │   ├── CaseAgentAction.cls
+│       │   └── CaseAgentActionTest.cls
+│       │
+│       ├── lwc/
+│       │   └── caseEscalationPanel/
+│       │
+│       └── permissionsets/
+│           └── Agentforce_Demo.permissionset-meta.xml
+│
+├── scripts/
+│   └── sample-data/
+│       └── sampleCases.json
+│
+├── sfdx-project.json
+└── README.md
+
 
 ## Deployment
 1. Authenticate org
