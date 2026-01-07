@@ -40,27 +40,29 @@ Demonstrate how Agentforce Actions can return rich, structured responses using L
   - Custom LWC
 - Fully bulkified & secure
 
-## Components (Mermaid tree)
-```mermaid
-mindmap
-  root((Salesforce-Bit))
-    force-app
-      main
-        default
-          classes
-            CaseAgentAction.cls
-            CaseAgentActionTest.cls
-          lwc
-            caseEscalationPanel
-          permissionsets
-            Agentforce_Demo.permissionset-meta.xml
-    scripts
-        sample-data
-│           sampleCases.json
-    sfdx-project.json
-    README.md
+## Components
 ```
-
+Salesforce-BIT
+│
+├── force-app/
+│   └── main/default/
+│       ├── classes/
+│       │   ├── CaseAgentAction.cls
+│       │   └── CaseAgentActionTest.cls
+│       │
+│       ├── lwc/
+│       │   └── caseEscalationPanel/
+│       │
+│       └── permissionsets/
+│           └── Agentforce_Demo.permissionset-meta.xml
+│
+├── scripts/
+│   └── sample-data/
+│       └── sampleCases.json
+│
+├── sfdx-project.json
+└── README.md
+```
 ## Deployment
 1. Authenticate org
 2. Deploy metadata
